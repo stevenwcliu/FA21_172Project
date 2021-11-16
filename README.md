@@ -24,3 +24,4 @@ After selecting the project we want to import, we will click on finish, then the
 ![3](https://user-images.githubusercontent.com/66756662/141928283-f94269c8-3f78-415a-b3ea-66445e22885b.jpg)
 
 After that run DemoApplication, then you will be able to open the website with localhost:8080!
+![3](https://user-images.githubusercontent.com/66756662/141928589-f1a3cc40-280a-4245-99a8-875f5e5f7bf4.jpg)
