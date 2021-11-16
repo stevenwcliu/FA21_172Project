@@ -59,7 +59,7 @@
              
             
                  
-            <form:button>Register</form:button>
+            <form:button>Order</form:button>
         </form:form>
     </h4>
     <footer>
