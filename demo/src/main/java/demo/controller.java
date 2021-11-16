@@ -18,6 +18,11 @@ public class controller {
 		return "homepage";
 	}
 	
+	@GetMapping("/menu")
+	public String menu() {
+		return "menu";
+	}
+	
 	@GetMapping("/orderpage")
 	public String showForm(Model model) {
 		Order ord = new Order();
