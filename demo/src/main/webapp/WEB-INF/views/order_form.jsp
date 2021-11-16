@@ -36,12 +36,12 @@
             <form:radiobutton path="size" value="Small"/>Small
             <form:radiobutton path="size" value="Medium" /> Medium
             <form:radiobutton path="size" value="Large" />Large
-            <br/>
+            <br/><br/>
              
              <form:label path="temp"> Hot or Cold ? </form:label>
              <form:radiobutton path="temp" value="Hot" />Hot
              <form:radiobutton path="temp" value="Cold"/>Cold
-             <br/>
+             <br/><br/>
              
              <form:label path="milk"> Milk type: </form:label>
              <form:radiobutton path="milk" value="No Milk" />No Milk
@@ -49,13 +49,13 @@
              <form:radiobutton path="milk" value="Low-fat Milk"/>Low-fat Milk
              <form:radiobutton path="milk" value="Soy Milk"/>Soy Milk
              <form:radiobutton path="milk" value="Almond Milk"/>Almond Milk
-             <br/>
+             <br/><br/>
              
              <form:label path="topping"> Topping: </form:label>
              <form:radiobutton path="topping" value="Whipped Cream" />Whipped Cream
              <form:radiobutton path="topping" value="Chocolate Drizzle"/>Chocolate Drizzle
              <form:radiobutton path="topping" value="Caramel Drizzle"/>Caramel Drizzle
-             <br/>
+             <br/><br/>
              
             
                  
