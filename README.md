@@ -9,4 +9,6 @@ Installation:
  Run the program:
  first download the files, then unzip it.
  After unzipping, import the files in to the integrated development kit and run DemoApplication
+ 
+ After running DemoApplication: type in localhost:8080 in the web browser
   
