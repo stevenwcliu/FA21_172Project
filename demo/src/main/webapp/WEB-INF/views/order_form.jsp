@@ -14,8 +14,10 @@
 	<nav>
 		<!-- links to each page-->
 		<ul>
-			<li><a href="Homepage.html" target="_blank">Homepage</a></li>
-			<li><a href="order.html" target="_blank">Order</a></li>
+			<li><a href="/" target="_blank">Homepage</a></li>
+			<li><a href="orderpage" target="_blank">Order</a></li>
+			<li><a href="menu" target="_blank">Menu</a></li>
+			<li><a href="" target="_blank">Order History</a></li>
 			<li><a herf="" target="_blank">Account</a></li>
 		</ul>
 	
