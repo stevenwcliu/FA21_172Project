@@ -25,40 +25,37 @@
 </h1>
 <h4>
         <form:form action="orderpage" method="post" modelAttribute="order">
-            <form:label path="drinkName">Drink name:</form:label>
-            <form:radiobutton path="drinkName" value="Black Coffee"/>Black Coffee
-            <form:radiobutton path="drinkName" value="Latte"/>Latte
-            <form:radiobutton path="drinkName" value="Cold Brew"/>Cold Brew
-            <form:radiobutton path="drinkName" value="Hot Chocolate"/>Hot Chocolate
-            <br/><br/>
+            <form:label path="drinkName">Drink name:</form:label><br/>
+            <form:radiobutton path="drinkName" value="Black Coffee"/>Black Coffee - $4.25<br/>
+            <form:radiobutton path="drinkName" value="Latte"/>Latte- $4.50 <br/>
+            <form:radiobutton path="drinkName" value="Cold Brew"/>Cold Brew - $4.75 <br/>
+            <form:radiobutton path="drinkName" value="Hot Chocolate"/>Hot Chocolate - $4.25 <br/> 
+            <br/>
              
-            <form:label path="size">Size:</form:label>
-            <form:radiobutton path="size" value="Small"/>Small
-            <form:radiobutton path="size" value="Medium" /> Medium
-            <form:radiobutton path="size" value="Large" />Large
-            <br/><br/>
+            <form:label path="size">Size:</form:label><br/>
+            <form:radiobutton path="size" value="Small"/>Small <br/>
+            <form:radiobutton path="size" value="Medium" /> Medium - add $0.50 <br/>
+            <form:radiobutton path="size" value="Large" />Large - add $1.00 <br/>
+            <br/>
              
-             <form:label path="temp"> Hot or Cold ? </form:label>
-             <form:radiobutton path="temp" value="Hot" />Hot
-             <form:radiobutton path="temp" value="Cold"/>Cold
-             <br/><br/>
+             <form:label path="temp"> Hot or Cold ? </form:label><br/>
+             <form:radiobutton path="temp" value="Hot" />Hot &ensp; &ensp;
+        	<form:radiobutton path="temp" value="Cold"/>Cold <br/>
+             <br/>
              
-             <form:label path="milk"> Milk type: </form:label>
-             <form:radiobutton path="milk" value="No Milk" />No Milk
-             <form:radiobutton path="milk" value="Whole Milk"/>Whole Milk
-             <form:radiobutton path="milk" value="Low-fat Milk"/>Low-fat Milk
-             <form:radiobutton path="milk" value="Soy Milk"/>Soy Milk
-             <form:radiobutton path="milk" value="Almond Milk"/>Almond Milk
-             <br/><br/>
+             <form:label path="milk"> Milk type: </form:label><br/>
+             <form:radiobutton path="milk" value="No Milk" />No Milk <br/>
+             <form:radiobutton path="milk" value="Whole Milk"/>Whole Milk<br/>
+             <form:radiobutton path="milk" value="Low-fat Milk"/>Low-fat Milk<br/>
+             <form:radiobutton path="milk" value="Soy Milk"/>Soy Milk - add $0.20 <br/>
+             <form:radiobutton path="milk" value="Almond Milk"/>Almond Milk - add $0.20 <br/>
+             <br/>
              
-             <form:label path="topping"> Topping: </form:label>
-             <form:radiobutton path="topping" value="Whipped Cream" />Whipped Cream
-             <form:radiobutton path="topping" value="Chocolate Drizzle"/>Chocolate Drizzle
-             <form:radiobutton path="topping" value="Caramel Drizzle"/>Caramel Drizzle
-             <br/><br/>
-             
-            
-                 
+             <form:label path="topping"> Topping (No extra cost): </form:label> <br/>
+             <form:checkbox path="topping" value="Whipped Cream" />Whipped Cream &ensp;
+             <form:checkbox path="topping" value="Chocolate Drizzle"/>Chocolate Drizzle &ensp;
+             <form:checkbox path="topping" value="Caramel Drizzle"/>Caramel Drizzle <br/>
+             <br/>
             <form:button>Order</form:button>
         </form:form>
     </h4>

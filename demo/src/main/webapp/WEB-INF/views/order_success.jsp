@@ -21,6 +21,7 @@
         <span>Hot or Cold:</span><span>${ord.temp}</span><br/>
         <span>Milk type:</span><span>${ord.milk}</span><br/>
         <span>Topping:</span><span>${ord.topping}</span><br/>
+        <span>Price: $</span><span>${ord.price}</span><br/>
         <a href="/">Return to Homepage</a>
     </div>
 </body>
