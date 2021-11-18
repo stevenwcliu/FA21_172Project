@@ -30,29 +30,29 @@
 <br>	
 <h5>Drink type</h5>
 	<ul>
-		<li>Black Coffee</li>
-		<li>Latte</li>
-		<li>Cold Brew</li>
-		<li>Hot Chocolate</li>
+		<li>Black Coffee - $4.25</li>
+		<li>Latte - $4.50</li>
+		<li>Cold Brew - $4.75</li>
+		<li>Hot Chocolate - $4.25</li>
 	</ul>
 	
 <br><br>
 <h5>Sizes</h5>
 	<ul>
 		<li>Small</li>
-		<li>Medium</li>
-		<li>Large</li>
+		<li>Medium - add $0.50</li>
+		<li>Large - add $1.00</li>
 	</ul>
 <br><br>
 <h5>Milk types</h5>
 	<ul>
 		<li>Whole Milk</li>
 		<li>Low-fat Milk</li>
-		<li>Soy Milk</li>
-		<li>Almond Milk</li>
+		<li>Soy Milk - add $0.20</li>
+		<li>Almond Milk - add $0.20</li>
 	</ul>
 <br><br>
-<h5>Toppings</h5>
+<h5>Topping (No extra cost):</h5>
 	<ul>
 		<li>Whipped Cream</li>
 		<li>Chocolate Drizzle</li>
