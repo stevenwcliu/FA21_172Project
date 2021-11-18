@@ -58,5 +58,16 @@
 		<li>Chocolate Drizzle</li>
 		<li>Caramel Drizzle</li>
 	</ul>
+	
+<footer>
+	<h3>
+		We hope you visit us, and get some coffee!
+		
+		<h2>
+		Phone: (012)123-4567
+		</h2>
+	</h3>
+	
+</footer>
 </body>
 </html>
