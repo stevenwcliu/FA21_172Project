@@ -15,7 +15,7 @@ public class controller {
 	private JdbcTemplate jdbcTemplate;
 	
 	
-	@GetMapping({"/","/home"}) //guide page to homepage
+	@GetMapping("/home") //guide page to homepage
 	public String home() {
 		return "homepage";
 	}
