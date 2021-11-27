@@ -15,11 +15,16 @@ public class controller {
 	private JdbcTemplate jdbcTemplate;
 	
 	
-	@GetMapping({"/","/home"}) //guide page to homepage
+	@GetMapping("/") //guide page to homepage
 	public String home() {
 		return "homepage";
 	}
 	
+	@GetMapping("/registration") //guide page to homepage
+	public String registration() {
+		return "registration";
+	}
+
 	@GetMapping("/menu")
 	public String menu() {
 		return "menu";
@@ -30,7 +35,11 @@ public class controller {
 		Order ord = new Order();
 		model.addAttribute("order", ord);
 		return "order_form";
-		
+	}
+
+	@GetMapping("/history")
+	public String history() {
+		return "order_history";
 	}
 
 	@PostMapping("/orderpage")
@@ -44,10 +53,6 @@ public class controller {
 		}
 		return "order_success";
 	}
-	
-	
-	
-	
 	
 
 }

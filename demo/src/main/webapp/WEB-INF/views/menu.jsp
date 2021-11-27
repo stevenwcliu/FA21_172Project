@@ -20,7 +20,7 @@
 			<li><a href="/">Homepage</a></li>
 			<li><a href="orderpage">Order</a></li>
 			<li><a href="menu">Menu</a></li>
-			<li><a href="">Order History</a></li>
+			<li><a href="order_history.jsp">Order History</a></li>
 			<li><a herf="">Account</a></li>
 		</ul>
 	
