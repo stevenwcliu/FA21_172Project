@@ -1,4 +1,4 @@
-package test.register;
+package test.register.Model;
  
 import javax.persistence.*;
  

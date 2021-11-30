@@ -1,4 +1,4 @@
-package test.register;
+package test.register.Controller;
 
 import java.util.List;
 
@@ -10,6 +10,10 @@ import org.springframework.ui.Model;
 import org.springframework.web.bind.annotation.GetMapping;
 import org.springframework.web.bind.annotation.ModelAttribute;
 import org.springframework.web.bind.annotation.PostMapping;
+
+import test.register.Model.Order;
+import test.register.Model.User;
+import test.register.Repository.UserRepository;
  
 @Controller
 public class AppController {

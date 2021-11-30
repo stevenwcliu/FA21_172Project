@@ -1,9 +1,11 @@
-package test.register;
+package test.register.Security;
 
 import java.util.Collection;
 
 import org.springframework.security.core.GrantedAuthority;
 import org.springframework.security.core.userdetails.UserDetails;
+
+import test.register.Model.User;
 
 public class CustomUserDetails implements UserDetails {
 

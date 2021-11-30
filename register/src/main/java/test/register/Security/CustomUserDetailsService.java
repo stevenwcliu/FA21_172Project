@@ -1,9 +1,12 @@
-package test.register;
+package test.register.Security;
 
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.security.core.userdetails.UserDetails;
 import org.springframework.security.core.userdetails.UserDetailsService;
 import org.springframework.security.core.userdetails.UsernameNotFoundException;
+
+import test.register.Model.User;
+import test.register.Repository.UserRepository;
 
 public class CustomUserDetailsService implements UserDetailsService {
 

@@ -1,4 +1,4 @@
-package test.register;
+package test.register.Security;
 
 import javax.sql.DataSource;
 
