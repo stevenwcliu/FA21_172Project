@@ -35,11 +35,11 @@ public class AppController {
 		return "menu";
 	}
 
-    @GetMapping("/orderpage")
+    @GetMapping("/order")
 	public String showForm(Model model) {
 		Order ord = new Order();
 		model.addAttribute("order", ord);
-		return "order_form";
+		return "order";
 	}
 
     @GetMapping("/register")
