@@ -42,14 +42,6 @@ public class AppController
 		return "menu";
 	}
 
-	@GetMapping("/order")
-	public String showForm(Model model)
-	{
-		Order ord = new Order();
-		model.addAttribute("order", ord);
-		return "order";
-	}
-
 	@GetMapping("/register")
 	public String showRegistrationForm(Model model)
 	{
@@ -85,7 +77,15 @@ public class AppController
 		return "order_history";
 	}
 
-	@PostMapping("/orderpage")
+	@GetMapping("/order")
+	public String showForm(Model model)
+	{
+		Order ord = new Order();
+		model.addAttribute("order", ord);
+		return "order";
+	}
+
+	@PostMapping("/order")
 	public String submitForm(@ModelAttribute("ord") Order ord, @ModelAttribute("user") User user)
 	{
 //		Authentication authentication = SecurityContextHolder.getContext().getAuthentication();
