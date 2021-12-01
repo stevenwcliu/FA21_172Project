@@ -1,8 +1,15 @@
-#Online Coffee Shop
+# Online Coffee Shop
 ---
-## FA21_172Project
+### FA21_172Project
+University: San Jose State University
+Course: CMPE 172 - Enterprise Software/ Fall 2021
+Team members - Wencong Liu, Walton Ma, Rachel Tsai
 
-The Coffee Shop is a website where users will be able to order coffee easily.
+
+The Online Coffee Shop is a website where users will be able to create accounts, order drinks when signed in, and check their order history when needed.
+
+### Sample Demo Screenshots
+
 
 
 
