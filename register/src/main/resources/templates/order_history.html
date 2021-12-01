@@ -32,7 +32,7 @@
     />
      
     <sql:query var="orderHistory"   dataSource="${coffeeShop}">
-        SELECT * FROM coffeeOrder WHERE id = '*current user ID*';
+        SELECT * FROM coffeeOrder WHERE id = [[${#request.userPrincipal.principal.id}]];
     </sql:query>
      
     <div align="center">
