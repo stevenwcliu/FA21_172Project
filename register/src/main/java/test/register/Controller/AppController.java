@@ -86,7 +86,7 @@ public class AppController {
 				+ "VALUES(?,?,?,?,?,?,?)";
 		ord.calculatePrice();
 		int result = jdbcTemplate.update(sql, ord.getDrinkName(),ord.getSize(),ord.getTemp(),
-				ord.getMilk(),ord.getTopping(),ord.getPrice(),currentID);
+				ord.getMilk(), ord.getTopping(), ord.getPrice(), currentID);
 		// user.getID() means put value of logged in user's ID
 		
 		if (result>0) {
