@@ -11,8 +11,7 @@ The Online Coffee Shop is a website where users will be able to create accounts,
 ## Sample Demo Screenshots
 ---
 ### Homepage
-
-![Homepage 1](https://user-images.githubusercontent.com/66756662/144163602-3d474156-073e-4b8a-a1b8-b4f57e9932cc.png)
+![Homepage 1](https://user-images.githubusercontent.com/56695863/144167995-bc82a109-cb5d-4c0d-9a7a-d98572cc9ce7.png)
 
 When the user press on the arrows on the left or right side of the image, it will change the current image that is displayed.
 
