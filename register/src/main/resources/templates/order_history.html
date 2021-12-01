@@ -24,37 +24,42 @@
 	</nav>
 </h1>
 
-<br>	
-<h5>Drink type</h5>
-	<ul>
-		<li>Black Coffee - $4.25</li>
-		<li>Latte - $4.50</li>
-		<li>Cold Brew - $4.75</li>
-		<li>Hot Chocolate - $4.25</li>
-	</ul>
-	
-<br><br>
-<h5>Sizes</h5>
-	<ul>
-		<li>Small</li>
-		<li>Medium - add $0.50</li>
-		<li>Large - add $1.00</li>
-	</ul>
-<br><br>
-<h5>Milk types</h5>
-	<ul>
-		<li>Whole Milk</li>
-		<li>Low-fat Milk</li>
-		<li>Soy Milk - add $0.20</li>
-		<li>Almond Milk - add $0.20</li>
-	</ul>
-<br><br>
-<h5>Topping (No extra cost):</h5>
-	<ul>
-		<li>Whipped Cream</li>
-		<li>Chocolate Drizzle</li>
-		<li>Caramel Drizzle</li>
-	</ul>
+<sql:setDataSource
+        var="coffeeShop"
+        driver="com.mysql.cj.jdbc.Driver"
+        url="jdbc:mysql://cmpe172project.csphsmqqlsak.us-west-1.rds.amazonaws.com:3306/coffeeshop"
+        user="admin" password="Lovinggod1314+"
+    />
+     
+    <sql:query var="orderHistory"   dataSource="${coffeeShop}">
+        SELECT * FROM coffeeOrder WHERE id = '*current user ID*';
+    </sql:query>
+     
+    <div align="center">
+        <table border="1" cellpadding="5">
+            <caption><h2>List of users</h2></caption>
+            <tr>
+                <th>Order Number</th>
+                <th>Drink Name</th>
+                <th>Size</th>
+                <th>Temperature</th>
+                <th>Milk</th>
+                <th>Topping</th>
+                <th>Price</th>
+            </tr>
+            <c:forEach var="order" items="${orderHistory.rows}">
+                <tr>
+                    <td><c:out value="${order.order_number}" /></td>
+                    <td><c:out value="${order.drink_name}" /></td>
+                    <td><c:out value="${order.size}" /></td>
+                    <td><c:out value="${order.temperature}" /></td>
+                    <td><c:out value="${order.milk}" /></td>
+                    <td><c:out value="${order.topping}" /></td>
+                    <td><c:out value="${order.price}" /></td>
+                </tr>
+            </c:forEach>
+        </table>
+    </div>
 	
 <footer>
 	<h3>

@@ -79,9 +79,15 @@ public class AppController {
 
 	@PostMapping("/orderpage")
 	public String submitForm(@ModelAttribute("ord") Order ord) {
-		String sql = "INSERT INTO coffeeOrder (drink_name, size, temperature, milk, topping, price) VALUES(?,?,?,?,?,?)";
+		Authentication authentication = SecurityContextHolder.getContext().getAuthentication();
+		Long currentID = authentication.getID();
+		
+		String orderSql = "INSERT INTO coffeeOrder " + "(drink_name, size, temperature, milk, topping, price, id) "
+				+ "VALUES(?,?,?,?,?,?,?)";
 		ord.calculatePrice();
-		int result = jdbcTemplate.update(sql, ord.getDrinkName(),ord.getSize(),ord.getTemp(),ord.getMilk(),ord.getTopping(),ord.getPrice());
+		int result = jdbcTemplate.update(sql, ord.getDrinkName(),ord.getSize(),ord.getTemp(),
+				ord.getMilk(),ord.getTopping(),ord.getPrice(),currentID);
+		// user.getID() means put value of logged in user's ID
 		
 		if (result>0) {
 			System.out.println("new entry has been added");
