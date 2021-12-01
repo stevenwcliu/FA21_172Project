@@ -1,12 +1,13 @@
-package test.register.Security;
+package test.register.Model;
 
 import java.util.Collection;
 
 import org.springframework.security.core.GrantedAuthority;
 import org.springframework.security.core.userdetails.UserDetails;
 
-import test.register.Model.User;
-
+//implement authentication (login) 
+//by creating a class of subtype UserDetails (defined by Spring Security) 
+//to represent an authentication user
 public class CustomUserDetails implements UserDetails {
 
 	private User user;

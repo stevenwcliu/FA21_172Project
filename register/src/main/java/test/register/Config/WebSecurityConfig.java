@@ -1,4 +1,4 @@
-package test.register.Security;
+package test.register.Config;
 
 import javax.sql.DataSource;
 
@@ -12,6 +12,8 @@ import org.springframework.security.config.annotation.web.configuration.EnableWe
 import org.springframework.security.config.annotation.web.configuration.WebSecurityConfigurerAdapter;
 import org.springframework.security.core.userdetails.UserDetailsService;
 import org.springframework.security.crypto.bcrypt.BCryptPasswordEncoder;
+
+import test.register.Model.CustomUserDetailsService;
 
 @Configuration
 @EnableWebSecurity
@@ -38,11 +40,13 @@ public class WebSecurityConfig extends WebSecurityConfigurerAdapter {
 		return authProvider;
 	}
 
+
+
 	@Override
-	protected void configure(AuthenticationManagerBuilder auth) throws Exception {
+	protected void configure(AuthenticationManagerBuilder auth) throws Exception {	
 		auth.authenticationProvider(authenticationProvider());
 	}
-
+// a user must login to see the list users page (URL /users) and other pages do not require authentication. 
 	@Override
 	protected void configure(HttpSecurity http) throws Exception {
 		http.authorizeRequests()

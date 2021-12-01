@@ -2,7 +2,6 @@ package test.register.Model;
 
 public class Order {
 	
-	
 	private String drinkName;
 	private String size;
 	private String temp;
