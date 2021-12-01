@@ -11,29 +11,30 @@ import org.springframework.web.bind.annotation.PostMapping;
 @Controller
 public class controller {
 	
+	
 	@Autowired
 	private JdbcTemplate jdbcTemplate;
 	
 	
 	@GetMapping("/") //guide page to homepage
 	public String home() {
-		return "homepage";
+		return "/WEB-INF/views/homepage.jsp";
 	}
 	
-	@GetMapping("/menu")
+	@GetMapping("/menu") // guide page to menu
 	public String menu() {
-		return "menu";
+		return "/WEB-INF/views/menu.jsp";
 	}
 	
-	@GetMapping("/orderpage")
+	@GetMapping("/orderpage") //guide page to order page
 	public String showForm(Model model) {
 		Order ord = new Order();
 		model.addAttribute("order", ord);
-		return "order_form";
+		return "/WEB-INF/views/order_form.jsp";
 		
 	}
 
-	@PostMapping("/orderpage")
+	@PostMapping("/orderpage") // after order is submitted we get order information and inserted into database
 	public String submitForm(@ModelAttribute("ord") Order ord) {
 		String sql = "INSERT INTO coffeeOrder (drink_name, size, temperature, milk, topping, price) VALUES(?,?,?,?,?,?)";
 		ord.calculatePrice();
@@ -42,7 +43,7 @@ public class controller {
 		if (result>0) {
 			System.out.println("new entry has been added");
 		}
-		return "order_success";
+		return "/WEB-INF/views/order_success.jsp";
 	}
 	
 	
