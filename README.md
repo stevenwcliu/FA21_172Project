@@ -67,6 +67,13 @@ After selecting the project we want to import, we will click on finish, then the
 After that run DemoApplication, then you will be able to open the website with localhost:8081!
 ![3](https://user-images.githubusercontent.com/66756662/141928589-f1a3cc40-280a-4245-99a8-875f5e5f7bf4.jpg)
 
+## Diagrams
+---
+### System diagram
+![System diagram](https://user-images.githubusercontent.com/66756662/144168849-ad76518a-6b70-4080-ad1a-b53faa9fa55b.PNG)
+
+### Sequence/ Interaction diagram
+![interaction diagram](https://user-images.githubusercontent.com/66756662/144168938-246d2493-000d-47b9-ab44-76dd9361ca91.PNG)
 ### DB diagram
 ![DB](https://user-images.githubusercontent.com/56695863/144167819-adab4ae3-286b-4ee3-8149-7055c20e235a.png)
 
