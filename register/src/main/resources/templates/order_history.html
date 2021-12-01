@@ -3,7 +3,7 @@
 <head>
 <!--<meta charset="utf-8">-->
 <meta name="viewport" content="width=device-width, initial-scale=1">
-<title>Menu</title>
+<title>Order History</title>
 	
 <link href="css/layout.css" rel="stylesheet"/>
 	
@@ -11,7 +11,7 @@
 
 <body>
 <!-- page heading -->
-<h1>Menu 
+<h1>Order History 
 	<nav>
 		<!-- links to each page-->
 		<ul>
@@ -24,42 +24,47 @@
 	</nav>
 </h1>
 
-<sql:setDataSource
-        var="coffeeShop"
-        driver="com.mysql.cj.jdbc.Driver"
-        url="jdbc:mysql://cmpe172project.csphsmqqlsak.us-west-1.rds.amazonaws.com:3306/coffeeshop"
-        user="admin" password="Lovinggod1314+"
-    />
-     
-    <sql:query var="orderHistory"   dataSource="${coffeeShop}">
-        SELECT * FROM coffeeOrder WHERE id = [[${#request.userPrincipal.principal.id}]];
-    </sql:query>
-     
-    <div align="center">
-        <table border="1" cellpadding="5">
-            <caption><h2>List of users</h2></caption>
-            <tr>
-                <th>Order Number</th>
-                <th>Drink Name</th>
-                <th>Size</th>
-                <th>Temperature</th>
-                <th>Milk</th>
-                <th>Topping</th>
-                <th>Price</th>
-            </tr>
-            <c:forEach var="order" items="${orderHistory.rows}">
-                <tr>
-                    <td><c:out value="${order.order_number}" /></td>
-                    <td><c:out value="${order.drink_name}" /></td>
-                    <td><c:out value="${order.size}" /></td>
-                    <td><c:out value="${order.temperature}" /></td>
-                    <td><c:out value="${order.milk}" /></td>
-                    <td><c:out value="${order.topping}" /></td>
-                    <td><c:out value="${order.price}" /></td>
-                </tr>
-            </c:forEach>
-        </table>
-    </div>
+<table>
+<tr>
+<th>Order Number</th>
+<th>Drink Name</th>
+<th>Size</th>
+<th>Temperature</th>
+<th>Milk</th>
+<th>Topping</th>
+<th>Price</th>
+</tr>
+<?php
+	$username = "admin";
+	$password = "Lovinggod1314+";
+	$database = "jdbc:mysql://cmpe172project.csphsmqqlsak.us-west-1.rds.amazonaws.com:3306/coffeeshop";
+	$conn = mysqli_connect("localhost", $username, $password, $database);
+	// Check connection
+	if ($conn->connect_error) {
+		die("Connection failed: " . $conn->connect_error);
+	}
+	$sql = "SELECT order_number, drink_name, size, temperature, milk, topping, price 
+		FROM coffeeOrder 
+		WHERE id = " + [[${#request.userPrincipal.principal.id}]];
+	$result = $conn->query($sql);
+	if ($result->num_rows > 0) {
+		// output data of each row
+		while($row = $result->fetch_assoc()) {
+			echo "<tr>
+				<td>" . $row["order_number"]. "</td>
+				<td>" . $row["drink_name"] . "</td>
+				<td>" . $row["size"]. "</td>
+				<td>" . $row["temperature"]. "</td>
+				<td>" . $row["milk"]. "</td>
+				<td>" . $row["topping"]. "</td>
+				<td>" . $row["price"]. "</td>
+			</tr>";
+		}
+		echo "</table>";
+	} else { echo "0 results"; }
+	$conn->close();
+?>
+</table>
 	
 <footer>
 	<h3>
