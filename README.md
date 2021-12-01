@@ -35,7 +35,8 @@ After the user finish choose everything, the users will press the order button o
 ![order success page](https://user-images.githubusercontent.com/66756662/144164577-88b5b51d-28ae-40d3-bc8d-fd106cb825d0.png)
 
 After checking everything, the user can click on "Return to Homepage" to go back to homepage.
-Installation:
+
+## Installation:
   For this project java version 11 is used. Therefore, the JDK (java development kit) will needed to be downloaded.
   SQL database is also used along with AWS RDS, so MySQL also needed to be downloaded.
   For this program, an IDE (Integrated Developmen Environment) will be needed.
