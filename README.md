@@ -17,13 +17,23 @@ The Online Coffee Shop is a website where users will be able to create accounts,
 When the user press on the arrows on the left or right side of the image, it will change the current image that is displayed.
 
 Homepage 2 after the user change the image:
-
-
-![Homepage 2](https://user-images.githubusercontent.com/66756662/144163613-62a01467-9bc2-451b-a24d-97a507131445.png)
+![Homepage 2](https://user-images.githubusercontent.com/56695863/144167611-ea89c59e-0408-4de4-a680-348b4e64bf04.png)
 
 ### Menu page
-
+At the Homepage, you can choose to view our menu, make order, create or log-in your accounnt.
 ![menu page](https://user-images.githubusercontent.com/66756662/144163847-4d2cc45d-530c-424e-aa2c-8a8d655608ce.png)
+
+### Register page
+If the user choose to create an account, they will be prompted to enter your email, password, and full name.
+![Register page](https://user-images.githubusercontent.com/56695863/144167680-1686f0fb-4517-4a0c-ae16-9319a9e9e8be.png)
+
+### Log in page
+Then you can log-in with the account created.
+![Log in page](https://user-images.githubusercontent.com/56695863/144167726-ba039961-3a74-40d9-9a71-5d74caf7a310.png)
+
+### Welcome page
+You will see an updated Homepage with a welcoming message. When you make orders, you will be able to review your own record.
+![Welcome page](https://user-images.githubusercontent.com/56695863/144167490-c7ef09c0-4f3f-44d1-bc53-1032659ca8ca.png)
 
 ### Order page
 After the user select all the things they want, the page would look like this:
@@ -57,3 +67,9 @@ After selecting the project we want to import, we will click on finish, then the
 
 After that run DemoApplication, then you will be able to open the website with localhost:8081!
 ![3](https://user-images.githubusercontent.com/66756662/141928589-f1a3cc40-280a-4245-99a8-875f5e5f7bf4.jpg)
+
+### DB diagram
+![DB](https://user-images.githubusercontent.com/56695863/144167819-adab4ae3-286b-4ee3-8149-7055c20e235a.png)
+
+### File architecture
+![File](https://user-images.githubusercontent.com/56695863/144167875-e630cbd2-7322-48d8-8947-eba6338ef745.png)
