@@ -1,5 +1,6 @@
-##Online Coffee Shop
-# FA21_172Project
+#Online Coffee Shop
+---
+## FA21_172Project
 
 The Coffee Shop is a website where users will be able to order coffee easily.
 
