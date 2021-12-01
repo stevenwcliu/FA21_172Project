@@ -10,7 +10,7 @@ public class Order {
 	private String topping;
 	private float price;
 	
-	public float calculatePrice() {
+	public float calculatePrice() { //calculate the price of the order
 		float totalPrice=0;
 		if(drinkName.equalsIgnoreCase("Black Coffee")) {
 			totalPrice+=4.25;
@@ -42,44 +42,53 @@ public class Order {
 		return price;
 	}
 	
-	
-	public float getPrice() {
+	//get the price
+	public float getPrice() { 
 		return price;
 	}
 
-
+	//set price
 	public void setPrice(float price) {
 		this.price = price;
 	}
 
-
+	//get list of toppings
 	public String getTopping() {
 		return topping;
 	}
+	//set the list of toppings
 	public void setTopping(String topping) {
 		this.topping = topping;
 	}
+	//get the type of milk
 	public String getMilk() {
 		return milk;
 	}
+	//set the type of milk
 	public void setMilk(String milk) {
 		this.milk = milk;
 	}
+	//get temperature
 	public String getTemp() {
 		return temp;
 	}
+	//set the temperature
 	public void setTemp(String temp) {
 		this.temp = temp;
 	}
+	//get the drink name
 	public String getDrinkName() {
 		return drinkName;
 	}
+	//set drink name
 	public void setDrinkName(String drinkName) {
 		this.drinkName = drinkName;
 	}
+	//get the size
 	public String getSize() {
 		return size;
 	}
+	//set the size
 	public void setSize(String size) {
 		this.size = size;
 	}
