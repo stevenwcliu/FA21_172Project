@@ -5,14 +5,36 @@ University: San Jose State University
 Course: CMPE 172 - Enterprise Software/ Fall 2021
 Team members - Wencong Liu, Walton Ma, Rachel Tsai
 
-
+### Project Introduction
 The Online Coffee Shop is a website where users will be able to create accounts, order drinks when signed in, and check their order history when needed.
 
-### Sample Demo Screenshots
+## Sample Demo Screenshots
+---
+### Homepage
+
+![Homepage 1](https://user-images.githubusercontent.com/66756662/144163602-3d474156-073e-4b8a-a1b8-b4f57e9932cc.png)
+
+When the user press on the arrows on the left or right side of the image, it will change the current image that is displayed.
+
+Homepage 2 after the user change the image:
 
 
+![Homepage 2](https://user-images.githubusercontent.com/66756662/144163613-62a01467-9bc2-451b-a24d-97a507131445.png)
 
+### Menu page
 
+![menu page](https://user-images.githubusercontent.com/66756662/144163847-4d2cc45d-530c-424e-aa2c-8a8d655608ce.png)
+
+### Order page
+After the user select all the things they want, the page would look like this:
+![Screenshot (141)](https://user-images.githubusercontent.com/66756662/144164227-7208819d-7298-42cc-9640-b00ad1cf657f.png)
+
+After the user finish choose everything, the users will press the order button on the bottom, then it will take the user to the order success page.
+
+### Order Success page
+![order success page](https://user-images.githubusercontent.com/66756662/144164577-88b5b51d-28ae-40d3-bc8d-fd106cb825d0.png)
+
+After checking everything, the user can click on "Return to Homepage" to go back to homepage.
 Installation:
   For this project java version 11 is used. Therefore, the JDK (java development kit) will needed to be downloaded.
   SQL database is also used along with AWS RDS, so MySQL also needed to be downloaded.
@@ -32,14 +54,5 @@ After selecting the project we want to import, we will click on finish, then the
 
 ![3](https://user-images.githubusercontent.com/66756662/141928283-f94269c8-3f78-415a-b3ea-66445e22885b.jpg)
 
-After that run DemoApplication, then you will be able to open the website with localhost:8080
+After that run DemoApplication, then you will be able to open the website with localhost:8080!
 ![3](https://user-images.githubusercontent.com/66756662/141928589-f1a3cc40-280a-4245-99a8-875f5e5f7bf4.jpg)
-
-At the Homepage, you can choose to view our menu, make order, create or log-in your accounnt.
-
-If you choose to create an account, you will be prompted to enter your email, password, and full name.
-
-Then you can log-in with the account created.
-
-You will see an updated Homepage with a welcoming message. When you make orders, you will be able to review your own record.
-
